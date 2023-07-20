@@ -248,26 +248,47 @@ top: 5px;
     justify-content: center;
   }
 
-.play-instantly-container{
+/* Play instantly section style starts */
+.main-instantly {
+    margin-top: 2rem;
+  }
+  
+  .instantly-1 {
     display: flex;
-}
-.instantly-content{
-    margin-left: 400px;
-    margin-top: 380px;
-    margin-bottom: 240px;
-}
-.card{
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .instantly-img-container {
+    width: 70%;
+    text-align: right;
     position: relative;
-    right: 8rem;
-    bottom: 18rem;
-}
-
-.instantly-image{
-
-    margin-left: 20rem;
-    margin-top: 10rem;
-
-}
+  }
+  
+  .instantly-img {
+    width: 75%;
+  }
+  
+  .instantly-content {
+    text-align: right;
+  }
+  
+  .instantly-content h2,
+  .instantly-content p {
+    padding-left: 45%;
+    margin-bottom: 1rem;
+  }
+  
+  .play-instant-absolute-img {
+    position: absolute;
+    bottom: -2rem;
+    width: 35%
+  }
+  
+  .play-instant-absolute-img img {
+    width: 100%;
+  }
+  
 /* genre button section starts here  */
 .main-genre{
     padding-top: 112px;

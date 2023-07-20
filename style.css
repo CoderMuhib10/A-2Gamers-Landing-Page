@@ -10,6 +10,10 @@ body {
 * {
     font-family: Work Sans;
 }
+.default-margin{
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
 .txt-primary{
     color: #534C64;
 font-family: Work Sans;
@@ -34,14 +38,14 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     display: flex;
     gap: 2rem;
 }
-.logo {
+.logo, .logo-1 {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-left: 7rem;
 }
 
-.logo-txt {
+.logo-txt, .logo-txt-1 {
     color: #0b0223;
     font-size: 2rem;
     font-weight: 700;
@@ -51,7 +55,7 @@ span {
     color: #ff42a5;
 }
 
-.logo-img {
+.logo-img, .logo-img-1 {
     width: 5rem;
     height: 2.3rem;
 }
@@ -173,35 +177,197 @@ top: 5px;
 
 
 /* Online games section starts here  */
-.games-content{
+.online-games {
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 2.5rem;
+  }
+  
+  .online-games>h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .online-games>p {
+    margin-bottom: 2rem;
+  }
+  
+  .img-wrappers-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .img-wrapper img {
+    width: 100%;
+  }
+  
+  .img-wrapper {
+    width: 23%;
+    border-radius: 1rem;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-txt {
+    position: absolute;
+    top: 60%;
+    left: 52.5%;
+    transform: translate(-60%, -50%);
+    display: none;
+    color: #FF42A5;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .icon-over-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(rgba(22, 21, 21, 0.833), rgba(15, 13, 13, 0.904));
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(255, 0, 166);
+    border-radius: 20px;
+    display: none;
+  }
+  
+  .image-container:hover .hover-txt {
+    display: block;
+  }
+  
+  .image-container:hover .icon-over-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.play-instantly-container{
+    display: flex;
 }
-.games-content h1{color: #0B0223;
+.instantly-content{
+    margin-left: 400px;
+    margin-top: 380px;
+    margin-bottom: 240px;
+}
+.card{
+    position: relative;
+    right: 8rem;
+    bottom: 18rem;
+}
+
+.instantly-image{
+
+    margin-left: 20rem;
+    margin-top: 10rem;
+
+}
+/* genre button section starts here  */
+.main-genre{
+    padding-top: 112px;
+    margin-bottom: 0;
+    width: 100%px;
+height: 414px;
+background-color: #fff9fc;
+align-items: center;
+}
+.genre{display: flex;
+align-items: center;
+gap: 1rem;
+width: 248px;
+height: 80px;}
+.main-genre-1{margin-bottom: 2rem;}
+.main-genre-1, .main-genre-2{
     
-    font-family: Work Sans;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    display: flex;
+    gap: 1.7rem;
+    justify-content: center;
+  
 }
-.pink{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.bton{font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;}
+.genre:hover{
+    border: 1px solid #F948B2;
+    width: 230px;
+    height: 70px;
+border-radius: 50px;
+color: #FF42A5 ;
+flex-shrink: 0;
+padding: 5px;
+}
+/* genre button section ends  here  */
+
+
+/* footer section starts here  */
+.main-footer{
+    width: 100%;
+height: 600px;
+background: #0B0223;
+}
+.logo-1{
+    padding-top: 7rem;
+    justify-content: center;
+  
+}
+.logo-txt-1{
+    justify-content: center;
+    color: white;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    margin-top: 4.1rem;
+    gap: 60px;
+}
+.link h3{
+    color: #FFF;
+text-align: center;
 font-family: Work Sans;
-font-size: 48px;
+font-size: 18px;
 font-style: normal;
-font-weight: 700;
+font-weight: 600;
 line-height: normal;
 }
-.game-video{
-display: flex;
-justify-content: center;
-gap: 1rem;
+.main-icon{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 4.1rem;
 }
-.desc{
-    margin-top: 1rem;
+.primary-terms{
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+.txt-btn ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 4.6rem;
+    gap: 3.75rem;
+}
+.copyright p{
+    max-width: max-content;
+    margin: 1.9rem auto;
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
